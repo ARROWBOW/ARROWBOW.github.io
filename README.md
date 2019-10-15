@@ -1,3 +1,3 @@
-This is my first web project!
+This is my first project!
 =============================
 ###### And my last
