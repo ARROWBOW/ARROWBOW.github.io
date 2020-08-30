@@ -10,8 +10,7 @@
 }
 
 .main-surrender {
-    width: auto;
-    height: auto;
+    display: inline-block;
     position: relative;
     top: 9vw;
     left: 20vw;
@@ -24,6 +23,7 @@
 .main-surrender p {
     color: white;
     font: italic bold 96px Georgia, serif;
+    width: 20vm;
 }
 
 // .main-dec-inner {
