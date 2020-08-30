@@ -1,0 +1,40 @@
+// .是class #是id 这个要熟记 少用！
+.main-dec {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(/img/mainpage.jpg)no-repeat center top;
+    justify-content: center; //适应文件内容居中
+}
+
+.main-surrender {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 9vw;
+    left: 20vw;
+    z-index: 2;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+//trasition不能写在伪类上
+.main-surrender p {
+    color: white;
+    font: italic bold 96px Georgia, serif;
+}
+
+// .main-dec-inner {
+//     position: relative;
+//     top: 9vw;
+//     left: 20vw;
+//     z-index: 2;
+//     color: white;
+//     font: italic bold 96px Georgia, serif;
+// }
+.main-surrender:hover {
+    top: 7.8vw;
+    left: 18.8vw;
+}

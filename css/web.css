@@ -1,0 +1,34 @@
+.main-dec {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url(/img/mainpage.jpg) no-repeat center top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-surrender {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 9vw;
+  left: 20vw;
+  z-index: 2;
+  color: white;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.main-surrender p {
+  color: white;
+  font: italic bold 96px Georgia, serif;
+}
+
+.main-surrender:hover {
+  top: 7.8vw;
+  left: 18.8vw;
+}
+/*# sourceMappingURL=web.css.map */
