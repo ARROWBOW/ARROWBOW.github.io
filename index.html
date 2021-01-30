@@ -10,17 +10,52 @@
     <!--这个是标签图标的内容-->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!--  这个是cdn的bootstrap的一个外链-->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/jquery.slim.min.js"></script>
     <!-- jquery的外链 -->
+    <script src="./js/main.js"></script>
+    <!-- 自己写的js的外链 -->
     <link rel="stylesheet" href="./css/web.css">
     <title>我的个人网页</title>
     <!-- 这个是标题 -->
-    <!-- <style>
-       
-    </style> -->
+    <style>
+        #top-distance {
+            width: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- 这是标题栏 -->
+    <nav class="navbar navbar-defult" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://arrowbow.github.io">我的个人网站</a>
+            </div>
+            <div id="top-distance"></div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">iOS</a></li>
+                    <li><a href="#">SVN</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                        Java
+                        <b class="caret"></b>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">jmeter</a></li>
+                            <li><a href="#">EJB</a></li>
+                            <li><a href="#">Jasper Report</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">分离的链接</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">另一个分离的链接</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 这是第二个标题栏 -->
 
 </body>
 
