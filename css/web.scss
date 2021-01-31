@@ -1,8 +1,18 @@
-// .是class #是id 这个要熟记 少用！
+/* 
+
+.是class #是id 这个要熟记 少用！
+
+ 命名规则 ：
+ main为除了标题的主要内容  例子：main1为除导航栏的第一个块
+
+ 
+*/
+
 #top-distance {
     width: 10px;
 }
 
 .main1 {
     background-image: url(https://img.zcool.cn/community/0111e85fe4385211013fdcc75fdb04.jpg@1280w_1l_2o_100sh.jpg);
+    height: 500px;
 }
