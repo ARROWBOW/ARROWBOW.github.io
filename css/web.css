@@ -1,34 +1,8 @@
-.main-dec {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: url(/img/mainpage.jpg) no-repeat center top;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#top-distance {
+  width: 10px;
 }
 
-.main-surrender {
-  display: inline-block;
-  position: relative;
-  top: 9vw;
-  left: 20vw;
-  z-index: 2;
-  color: white;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.main-surrender p {
-  color: white;
-  font: italic bold 96px Georgia, serif;
-  width: 20vm;
-}
-
-.main-surrender:hover {
-  top: 7.8vw;
-  left: 18.8vw;
+.main1 {
+  background-image: url(https://img.zcool.cn/community/0111e85fe4385211013fdcc75fdb04.jpg@1280w_1l_2o_100sh.jpg);
 }
 /*# sourceMappingURL=web.css.map */
