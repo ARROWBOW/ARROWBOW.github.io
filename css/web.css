@@ -9,11 +9,15 @@
 
 */
 .main1 {
-  background-image: url(https://img.zcool.cn/community/0111e85fe4385211013fdcc75fdb04.jpg@1280w_1l_2o_100sh.jpg);
+  background: url(https://img1.yjst.cn/pictures/76/76d6149bfc7c6c9de6c6a9f510bf6e468c89f0d1.jpg) center no-repeat;
   height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
 }
 
-.text-center {
+.text1 {
+  display: block;
   margin: auto 0;
 }
 /*# sourceMappingURL=web.css.map */
