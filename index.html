@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!--这个是标签图标的内容-->
     <link rel="icon" sizes="any" mask="" href="https://forum.sublimetext.com/uploads/default/original/3X/2/e/2e3e7d351be1a5d1e100c4bbd76d6681fdd08318.ico">
+    <!-- 这个是jQuery的1.12.4版本 -->
+    <script src="https://g.csdnimg.cn/??lib/jquery/1.12.4/jquery.min.js,report/1.0.6/report.js"></script>
     <!--  这个是cdn的bootstrap的一个外链-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- 这是bootstrap的图标 -->
@@ -36,30 +38,22 @@
         <a class="navbar-brand" href="https://arrowbow.github.io"><i class="bi bi-hdd"></i></a>
 
         <!-- Links -->
-        <ul class="navbar-nav navbar-right">
+        <ul class="navbar-nav">
             <li class="nav-item .xl-auto">
-                <a class="nav-link" href="#">首页</a>
+                <a class="nav-link" href="#" id="mainpage">首页</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">个人简介</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">我的教育</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link t" href="#">我的日常生活</a>
-            </li>
+
             <!-- Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              知识回顾
+              其他
             </a>
                 <div class="dropdown-menu dropdpdown-light">
-                    <a class="dropdown-item" href="#">个人生平</a>
-                    <a class="dropdown-item" href="#">我的年龄</a>
-                    <a class="dropdown-item" href="#">做过的工作</a>
-                    <a class="dropdown-item" href="#">我的爱好</a>
-                    <a class="dropdown-item" href="#">末尾</a>
+                    <a class="dropdown-item" href="#">xx</a>
+                    <a class="dropdown-item" href="#">xx</a>
+                    <a class="dropdown-item" href="#">xx</a>
+                    <a class="dropdown-item" href="#">xx</a>
+                    <a class="dropdown-item" href="#">xx</a>
                 </div>
             </li>
         </ul>
@@ -67,7 +61,7 @@
 
     <!-- 这是第一部分 -->
     <!-- 这里做成轮播图 -->
-    <div class=" text-center main1" id="main1">
+    <div class=" text-center main1" id="main1" style="background:red url(./img/mainpage.jpg) no-repeat top;">
 
     </div>
 
@@ -82,6 +76,11 @@
 </body>
 
 <script>
+    //主页的js代码
+    $("#mainpage").click(() => {
+            alert("这已经是主页了！")
+        })
+        //
 </script>
 
 

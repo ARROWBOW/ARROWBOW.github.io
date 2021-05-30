@@ -12,4 +12,12 @@
   height: 500px;
   background-color: yellow;
 }
+
+.dropdown-menu.dropdown-light.dropdown-right.show {
+  float: right;
+}
+
+.dropdown-toggle .nav-link {
+  float: right;
+}
 /*# sourceMappingURL=web.css.map */
