@@ -20,15 +20,20 @@
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/web.css">
     <!-- 这个是标题 -->
-    <title>xx琴行，值得您的信赖！</title>
+    <title>我的个人博客，您好！欢迎点击！</title>
 </head>
 
 <body>
-    <!-- 这是标题栏 -->
+    <!-- 这是导航栏 -->
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!--  ！！！这里之前是nav标签有间距，所以改成div了！！！ 
+    
+          错误的示范
+    -->
+
+    <div class="navbar navbar-expand-sm bg-light navbar-light">
         <!-- Brand -->
-        <a class="navbar-brand" href="https://arrowbow.github.io"><i class="bi bi-youtube"></i></a>
+        <a class="navbar-brand" href="https://arrowbow.github.io"><i class="bi bi-hdd"></i></a>
 
         <!-- Links -->
         <ul class="navbar-nav navbar-right">
@@ -36,7 +41,7 @@
                 <a class="nav-link" href="#">首页</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">我们的老师</a>
+                <a class="nav-link" href="#">个人生平</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="#">招生</a>
@@ -49,19 +54,20 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
               知识回顾
             </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">钢琴</a>
+                <div class="dropdown-menu dropdpdown-light">
+                    <a class="dropdown-item" href="#">个人生平</a>
                     <a class="dropdown-item" href="#">声乐</a>
                     <a class="dropdown-item" href="#">吉他</a>
                     <a class="dropdown-item" href="#">架子鼓</a>
                 </div>
             </li>
         </ul>
-    </nav>
+    </div>
 
     <!-- 这是第一部分 -->
+    <!-- 这里做成轮播图 -->
     <div class=" text-center main1" id="main1">
-        <h1></h1>
+
     </div>
 
     <!-- 这个是第二部分 -->
@@ -75,9 +81,6 @@
 </body>
 
 <script>
-    document.getElementById('main1').onclick = function() {
-        alert("我被点击了！")
-    }
 </script>
 
 
