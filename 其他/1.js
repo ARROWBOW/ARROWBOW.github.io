@@ -1,7 +1,7 @@
-import {
+// import {
 
 
 
-} from "./name";
+// } from "./name";
 
 // js  import的用法
