@@ -8,16 +8,21 @@
 
 
 */
-.main1 {
-  height: 500px;
-  background-color: yellow;
-}
-
 .dropdown-menu.dropdown-light.dropdown-right.show {
   float: right;
 }
 
 .dropdown-toggle .nav-link {
   float: right;
+}
+
+#vi {
+  background: #000;
+}
+
+#vi #vi-1 {
+  display: block;
+  height: 600px;
+  margin: auto;
 }
 /*# sourceMappingURL=web.css.map */
