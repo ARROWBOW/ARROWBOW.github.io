@@ -22,7 +22,18 @@
 
 #vi #vi-1 {
   display: block;
-  height: 600px;
+  height: 700px;
   margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  ul {
+    font-family: '汉仪书魂体简 汉仪行楷简';
+    src: url("../font/汉仪书魂体简.ttf") format("tff");
+  }
 }
 /*# sourceMappingURL=web.css.map */
