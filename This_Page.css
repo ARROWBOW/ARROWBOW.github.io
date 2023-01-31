@@ -1,3 +1,15 @@
+/* 字体1 钉钉字体 */
+@font-face {
+    font-family: "JinBuTi";
+    src: url("fonts/DingTalk JinBuTi.ttf");
+  }
+/* 字体2 钉钉字体 */
+@font-face {
+    font-family: "junwei";
+    src: url("fonts/junweiW2.ttf");
+  }
+
+/* 全局样式 */
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +17,44 @@
 
 .bottom {
     margin: 0;
-    background: linear-gradient(45deg,#396abe,rgb(6, 167, 241)); 
+    background: linear-gradient(45deg,#eaebed,rgb(192, 230, 247)); 
     min-height: 100vh;
+}
+
+.left_top_icon_1{
+    width: 20vh;
+    height: 70px;
+    background-color: brown;
+    border-radius: 10px;
+    position: relative;
+    top: 15vh;
+    left: 30vh;
+    opacity: 0.5;
+}
+.intro_name_1{
+    position: relative;
+    top: 22vh;
+    left:30vh;
+    color: rgb(255, 106, 0);
+    font-family:'junweiW2';
+}
+
+.intro_name_2{
+    position: relative;
+    top: 20vh;
+    left: 30vh;
+    color: 222;
+    font-size: 120px;
+    font-family:'junweiW2';
+}
+
+.intro_name_3{
+    position: relative;
+    top: 21vh;
+    left: 30vh;
+    color: rgb(180, 180, 180);
+    font-family:'junweiW2';
+    width: 60vh;
+    word-wrap: break-word;
+    font-size: 32px;
 }
