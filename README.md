@@ -1,4 +1,4 @@
-<h1 style="text-align: center;color:black;font-weight:bold;">我的个人简历</h1>
+<h3 style="text-align: center;color:black;font-weight:bold;">我的个人简历</h3>
 
 <ul>
   <li style="color:black;">姓名：</li><span style="color:brown;font-size:24px;">张会来</span>
