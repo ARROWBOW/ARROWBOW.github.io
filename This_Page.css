@@ -5,6 +5,6 @@
 
 .bottom {
     margin: 0;
-    background: linear-gradient(45deg,#45b26e,#f0a); 
+    background: linear-gradient(45deg,#396abe,rgb(6, 167, 241)); 
     min-height: 100vh;
 }
