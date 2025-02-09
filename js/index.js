@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 背景颜色的不断渐变
     const colors = [
-        { start: [255, 222, 233], end: [181, 255, 252] },
-        { start: [161, 140, 209], end: [251, 194, 235] },
-        { start: [251, 194, 235], end: [166, 193, 238] },
-        { start: [161, 196, 253], end: [194, 233, 251] },
-        { start: [255, 195, 160], end: [255, 175, 189] },
-        { start: [255, 154, 158], end: [250, 208, 196] }
+        { start: [196, 222, 233], end: [181, 255, 252] },
+        { start: [252, 140, 209], end: [251, 194, 235] },
+        { start: [235, 194, 235], end: [166, 193, 238] },
+        { start: [238, 196, 253], end: [194, 233, 251] },
+        { start: [251, 195, 160], end: [255, 175, 189] },
+        { start: [189, 154, 158], end: [250, 208, 196] }
     ];
     let currentIndex = 0;
     let colorStep = 0.01;
@@ -44,10 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // 添加主页按钮点击事件监听器
-    document.getElementById('homeButton').addEventListener('click', function() {
-        window.location.href = 'index.html'; // 替换为你的主页路径
-    });
 
     document.getElementById('preson1').addEventListener('click', function() {
         window.location.href = './pages/personal.html'; // 替换为你的主页路径
@@ -56,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ChangeColor').addEventListener('click', function() {
         // 改变背景颜色
         resetColors();
+        // window.location.href = 'index.html';
 
         // 播放音乐
         const audio = new Audio('./media/celebrate1.mp3'); // 替换为你的音乐文件路径
@@ -74,3 +71,26 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeBackground, 100); // 每100毫秒更新一次背景色
     changeBackground(); // 初始化背景色
 });
+
+
+const images = [
+    '../images/logo-m.webp',
+    '../images/logo-l.webp',
+    '../images/logo-r.webp'
+];
+const imgElement = document.getElementById('hoverImage');
+let currentIndex = 0;
+// 鼠标悬浮事件处理函数
+function onMouseOver() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imgElement.src = images[currentIndex];
+}
+// 鼠标移出事件处理函数
+function onMouseOut() {
+    currentIndex = currentIndex;
+    imgElement.src = images[currentIndex];
+}
+// 添加事件监听器
+const toolBarLeft = document.querySelector('.tool-bar-left');
+toolBarLeft.addEventListener('mouseover', onMouseOver);
+toolBarLeft.addEventListener('mouseout', onMouseOut);
