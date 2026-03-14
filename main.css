@@ -19,8 +19,8 @@ body {
         .top-bar-1,
         .top-bar-2,
         .top-bar-3 {
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             /* 关键：给图片父容器设置 grid 布局实现图片居中 */
             display: grid;
             place-items: center;
@@ -32,8 +32,8 @@ body {
             text-decoration: none;
             /* 保证a标签和子容器尺寸一致，点击范围完整 */
             display: inline-block;
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
         }
 
         .top-bar img {
@@ -47,9 +47,19 @@ body {
             height: 20rem;
             background-color: red;
         }
-        
+
          .mid-2 {
             width: 100%;
             height: 20rem;
             background-color: yellow;
+        }
+         .mid-3 {
+            width: 100%;
+            height: 20rem;
+            background-color: rgb(66, 66, 26);
+        }
+         .mid-4 {
+            width: 100%;
+            height: 20rem;
+            background-color: rgb(179, 17, 144);
         }
