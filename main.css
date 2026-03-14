@@ -7,12 +7,13 @@ body {
         .top-bar {
             width: 100%;
             height: 5rem;
-            background-color: red;
+            background-color: gray;
             display: grid;
             /* 修改第三个列宽为 1fr，保证三个元素都能显示 */
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 0fr 1fr 0fr;
             align-items: center;
             justify-items: center; /* 水平居中 grid 子元素 */
+            opacity: 50%;
         }
 
         /* 统一设置三个子容器的样式，避免重复代码 */
@@ -21,7 +22,6 @@ body {
         .top-bar-3 {
             width: 4rem;
             height: 4rem;
-            background-color: rgb(27, 102, 240);
             /* 关键：给图片父容器设置 grid 布局实现图片居中 */
             display: grid;
             place-items: center;
