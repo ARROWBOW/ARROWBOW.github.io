@@ -1,53 +1,34 @@
-body{
-    margin: 0;
-    padding: 0;
-}
+body {
+            margin: 0;
+            padding: 0;
+        }
 
-.top-bar{
-    background-color: rgb(23, 175, 168);
-    width: 100%;
-    height: 8rem;
-}
+        /* 合并重复的 .top-bar 样式，只保留一份 */
+        .top-bar {
+            width: 100%;
+            height: 5rem;
+            background-color: red;
+            display: grid;
+            /* 修改第三个列宽为 1fr，保证三个元素都能显示 */
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center; /* 水平居中 grid 子元素 */
+        }
 
-.top-bar{
-    width: 100%;
-    height: 5rem;
-    background-color:red;
-    display: grid;
-    grid-template-columns: 1fr 1fr 0fr;
-    align-items: center;
-    
-    
+        /* 统一设置三个子容器的样式，避免重复代码 */
+        .top-bar-1,
+        .top-bar-2,
+        .top-bar-3 {
+            width: 4rem;
+            height: 4rem;
+            background-color: rgb(27, 102, 240);
+            /* 关键：给图片父容器设置 grid 布局实现图片居中 */
+            display: grid;
+            place-items: center;
+        }
 
-}
-
-.top-bar-1{
-    width: 4rem;
-    height: 4rem;
-    background-color:rgb(27, 102, 240);
-    place-items: center;
-
-   
-}    
-.top-bar-2{
-    width: 4rem;
-    height: 4rem;
-    background-color:rgb(27, 102, 240);
-    place-items: center;
-
-
-}
-.top-bar-3{
-    width: 4rem;
-    height: 4rem;
-    background-color:rgb(27, 102, 240);
-    place-items: center;
-
-
-
-}
-.top-bar img {
-  width: 60%;
-  align-items: center;
-  object-fit: cover; /* 关键：保持比例并填满，图片不会被拉伸 */
-}
+        .top-bar img {
+            width: 60%;
+            object-fit: cover; /* 保持比例并填满，图片不会被拉伸 */
+            /* 移除无效的 align-items（这是容器属性，不是图片属性） */
+        }
