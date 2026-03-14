@@ -7,13 +7,12 @@ body {
         .top-bar {
             width: 100%;
             height: 5rem;
-            background-color: gray;
+            background-color: rgb(255, 255, 255);
             display: grid;
             /* 修改第三个列宽为 1fr，保证三个元素都能显示 */
             grid-template-columns: 0fr 1fr 0fr;
             align-items: center;
             justify-items: center; /* 水平居中 grid 子元素 */
-            opacity: 50%;
         }
 
         /* 统一设置三个子容器的样式，避免重复代码 */
@@ -27,8 +26,24 @@ body {
             place-items: center;
         }
 
+        /* 新增：优化a标签样式，去掉默认样式并继承布局属性 */
+        .top-bar a {
+            /* 去掉a标签默认下划线 */
+            text-decoration: none;
+            /* 保证a标签和子容器尺寸一致，点击范围完整 */
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+        }
+
         .top-bar img {
             width: 60%;
             object-fit: cover; /* 保持比例并填满，图片不会被拉伸 */
             /* 移除无效的 align-items（这是容器属性，不是图片属性） */
+        }
+        
+        .mid-1 {
+            width: 100%;
+            height: 20rem;
+            background-color: red;
         }
