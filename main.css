@@ -1,9 +1,36 @@
 body{
     margin: 0;
+    padding: 0;
 }
 
 .top-bar{
-    background-color: #f00;
+    background-color: rgb(23, 175, 168);
     width: 100%;
-    height: 10%;
+    height: 8rem;
+}
+
+.top-bar{
+    width: 100%;
+    height: 8rem;
+    background-color:red;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+}
+
+.top-bar-1{
+    width: 4rem;
+    height: 4rem;
+    background-color:rgb(27, 102, 240);
+}    
+.top-bar-2{
+    width: 4rem;
+    height: 4rem;
+    background-color:rgb(27, 102, 240);
+
+}
+.top-bar-3{
+    width: 4rem;
+    height: 4rem;
+    background-color:rgb(27, 102, 240);
+
 }
