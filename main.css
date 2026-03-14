@@ -16,26 +16,38 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 0fr;
     align-items: center;
+    
+    
+
 }
 
 .top-bar-1{
     width: 4rem;
     height: 4rem;
     background-color:rgb(27, 102, 240);
-    text-align: center;
+    place-items: center;
+
    
 }    
 .top-bar-2{
     width: 4rem;
     height: 4rem;
     background-color:rgb(27, 102, 240);
-    text-align: center;
+    place-items: center;
+
 
 }
 .top-bar-3{
     width: 4rem;
     height: 4rem;
     background-color:rgb(27, 102, 240);
-    text-align: center;
+    place-items: center;
 
+
+
+}
+.top-bar img {
+  width: 60%;
+  align-items: center;
+  object-fit: cover; /* 关键：保持比例并填满，图片不会被拉伸 */
 }
