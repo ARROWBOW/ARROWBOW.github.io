@@ -15,8 +15,7 @@ body{
     background-color:red;
     display: grid;
     grid-template-columns: 1fr 1fr  1fr;
-    grid-template-areas: " center " ;
-    justify-content: center;
+    grid-template-areas: center ;
     align-content: center;
 }
 
